@@ -16,7 +16,7 @@ gem 'figaro'
 gem 'simple_form'
 gem 'devise'
 gem 'haml'
-gem "haml-rails", "~> 2.0"
+gem 'haml-rails', '~> 2.0'
 
 #gem 'kaminari'
 #gem 'kaminari-bootstrap'
