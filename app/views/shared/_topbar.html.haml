@@ -8,11 +8,8 @@
         %a.nav-link{:href => root_path} Home
       %li.nav-item
         %a.nav-link{:href => "#"} Login / Register
-//      %li.nav-item.dropdown
-//        %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-//          Dropdown
-//        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
-//          %a.dropdown-item{:href => "#"} Ação
-//          %a.dropdown-item{:href => "#"} Outra ação
-//          .dropdown-divider
-//          %a.dropdown-item{:href => "#"} Algo mais aqui
+      %li.nav-item.dropdown
+        %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+          Dropdown
+        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+          = link_to('Sair', destroy_user_session_path, method: :delete, class: 'dropdown-item')
