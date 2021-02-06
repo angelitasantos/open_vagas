@@ -23,10 +23,15 @@ import './src/application.scss'
 //= require bootstrap
 //= require_tree .
 
-$(function () {
-    'use strict'
-  
-    $('[data-toggle="offcanvas"]').on('click', function () {
-      $('.offcanvas-collapse').toggleClass('open')
-    })
-  })
+require("trix")
+require("@rails/actiontext")
+
+// Função de contador do summary / positions
+$(document).ready(function(){
+    $('#current').text($('.count-textarea').val().length);
+    $('.count-textarea').keyup(function(){
+        var characterCount = $(this).val().length;
+        $('#current').text(characterCount);
+    });
+
+});

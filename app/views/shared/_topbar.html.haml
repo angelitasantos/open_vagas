@@ -1,12 +1,14 @@
 %nav.navbar.navbar-expand-md.fixed-top.navbar-dark.bg-dark
-  %a.navbar-brand{:href => "#"} Open Vagas
-  %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
+  %a.navbar-brand.desktop.left{:href => "#"} Open Vagas
+
+  %button.navbar-toggler{"aria-controls" => "conteudoNavbarSuportado", "aria-expanded" => "false", "aria-label" => "Alterna navegação", "data-target" => "#conteudoNavbarSuportado", "data-toggle" => "collapse", :type => "button"}
     %span.navbar-toggler-icon
-  #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
+  #conteudoNavbarSuportado.collapse.navbar-collapse
+  
     %ul.navbar-nav.mr-auto
       %li.nav-item.active
         %a.nav-link{:href => root_path}
-          Inicio
+          Home
           %span.sr-only (current)
       - unless user_signed_in?
         %li.nav-item.active
@@ -15,7 +17,15 @@
         %li.nav-item.active
           %a.nav-link{:href => dynamic_url_company}
             Minha Empresa
+        %li.nav-item.active
+          %a.nav-link{:href => new_position_path}
+            Publicar Vaga
+        %li.nav-item.active
+          %a.nav-link{:href => new_applicant_path}
+            Minhas Vagas
         %li.nav-item.active.dropdown
           %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Configurações
           .dropdown-menu{"aria-labelledby" => "dropdown01"}
+            = link_to('Vagas Publicadas', positions_path, class: 'dropdown-item')
+            %hr
             = link_to('Sair', destroy_user_session_path, method: :delete, class: 'dropdown-item')

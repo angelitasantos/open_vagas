@@ -1,2 +1,6 @@
 @import 'theme';
-@import 'companies'
+@import 'companies';
+@import 'positions';
+@import 'applicants';
+@import "trix/dist/trix";
+@import "./actiontext.scss"

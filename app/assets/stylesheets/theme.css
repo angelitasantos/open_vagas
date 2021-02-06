@@ -75,7 +75,7 @@ body {
 .lh-125 { line-height: 1.25; }
 .lh-150 { line-height: 1.5; }
 
-.container{
+.container {
   padding: 20px;
   background: white;
   border: 1px solid rgba(0,0, 0, 0.1);
@@ -84,13 +84,12 @@ body {
   margin: 2% 5% 5% 5%;
 }
 
-footer{
+footer {
   padding: 20px;
   background: white;
   text-align: center;
 }
 
-footer p{
+footer p {
   margin: 0;
 }
-
