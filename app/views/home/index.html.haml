@@ -1,49 +1,165 @@
-.d-flex.align-items-center.p-3.my-3.text-black-50.bg-light.rounded.shadow-sm
-  %img.mr-3{:alt => "", :height => "48", :src => "", :width => "48"}/
-  .lh-100
-    %h4.mb-0.text-black.lh-100 Open Vagas
-    %h6 Desde 2021
-.my-3.p-3.bg-white.rounded.shadow-sm
-  %h6.border-bottom.border-gray.pb-2.mb-0 Atualizações recentes
-  .media.text-muted.pt-3
-    %img.mr-2.rounded{:alt => "", "data-src" => "holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"}/
-    %p.media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
-      %strong.d-block.text-gray-dark @usuario
-      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-  .media.text-muted.pt-3
-    %img.mr-2.rounded{:alt => "", "data-src" => "holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1"}/
-    %p.media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
-      %strong.d-block.text-gray-dark @usuario
-      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-  .media.text-muted.pt-3
-    %img.mr-2.rounded{:alt => "", "data-src" => "holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1"}/
-    %p.media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
-      %strong.d-block.text-gray-dark @usuario
-      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-  %small.d-block.text-right.mt-3
-    %a{:href => "#"} Todas atualizações
-.my-3.p-3.bg-white.rounded.shadow-sm
-  %h6.border-bottom.border-gray.pb-2.mb-0 Sugestões
-  .media.text-muted.pt-3
-    %img.mr-2.rounded{:alt => "", "data-src" => "holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"}/
-    .media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
-      .d-flex.justify-content-between.align-items-center.w-100
-        %strong.text-gray-dark Nome completo
-        %a{:href => "#"} Seguir
-      %span.d-block @usuário
-  .media.text-muted.pt-3
-    %img.mr-2.rounded{:alt => "", "data-src" => "holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"}/
-    .media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
-      .d-flex.justify-content-between.align-items-center.w-100
-        %strong.text-gray-dark Nome completo
-        %a{:href => "#"} Seguir
-      %span.d-block @usuário
-  .media.text-muted.pt-3
-    %img.mr-2.rounded{:alt => "", "data-src" => "holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"}/
-    .media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
-      .d-flex.justify-content-between.align-items-center.w-100
-        %strong.text-gray-dark Nome completo
-        %a{:href => "#"} Seguir
-      %span.d-block @usuário
-  %small.d-block.text-right.mt-3
-    %a{:href => "#"} Todas sugestões
+.conteudo
+/ conteudo
+
+%section.home.banner-container
+  .center
+    .banner-single.imgFinanceiro
+    / banner-single
+    .banner-single.imgProcessos
+    / banner-single
+    .banner-single.imgEstrutura
+    / banner-single
+    .overlay
+    / overlay
+    %div
+      %h5#textoPrincipal
+  / center
+/ Banner Principal
+
+%section#quemsomos
+  .conteudo
+  / conteudo
+  .center
+    .center
+      %h2.h2 Quem Somos
+    / center
+  / center
+/ Quem Somos
+%section.row
+  %article.col
+    .card
+      .card-body
+        %h6.card-text
+  / Quem somos 1
+/ row
+
+%section#servicos
+  .conteudo
+  / conteudo
+  %h2.h2 Nossos Serviços
+/ Serviços
+%section.row
+  %article.col-4
+    .card
+      .card-body
+        %h5.card-title
+        %h6.card-text
+        %a{:href => "#servicos"}
+          %button.btnInfo{:type => "button"}
+  / Serviço 1
+  %article.col-4
+    .card
+      .card-body
+        %h5.card-title
+        %h6.card-text
+        %a{:href => "#servicos"}
+          %button.btnInfo{:type => "button"}
+  / Serviço 2
+  %article.col-4
+    .card
+      .card-body
+        %h5.card-title
+        %h6.card-text
+        %a{:href => "#servicos"}
+          %button.btnInfo{:type => "button"}
+  / Serviço 3
+  %article.col-4
+    .card
+      .card-body
+        %h5.card-title
+        %h6.card-text
+        %a{:href => "#servicos"}
+          %button.btnInfo{:type => "button"}
+  / Serviço 4
+  %article.col-4
+    .card
+      .card-body
+        %h5.card-title
+        %h6.card-text
+        %a{:href => "#servicos"}
+          %button.btnInfo{:type => "button"}
+  / Serviço 5
+  %article.col-4
+    .card
+      .card-body
+        %h5.card-title
+        %h6.card-text
+        %a{:href => "#servicos"}
+          %button.btnInfo{:type => "button"}
+  / Serviço 6
+/ row
+
+%section#planos
+  .conteudo
+  / conteudo
+  %h2.h2 Planos Disponíveis
+  %h6 Escolha a melhor modalidade para você:
+  %h6 Presencial ou Online
+/ Planos Disponíveis
+%section.row
+  %article.col-4
+    .card
+      .card-body
+        %h5.card-title
+        %img.imagem-card{:alt => "", :src => ""}/
+        %h6.card-text
+        %a{:href => "#planos"}
+          %button.btnSaibaMais{:type => "button"}
+  / Plano 1
+  %article.col-4
+    .card
+      .card-body
+        %h5.card-title
+        %img.imagem-card{:alt => "", :src => ""}/
+        %h6.card-text
+        %a{:href => "#planos"}
+          %button.btnSaibaMais{:type => "button"}
+  / Plano 2
+  %article.col-4
+    .card
+      .card-body
+        %h5.card-title
+        %img.imagem-card{:alt => "", :src => ""}/
+        %h6.card-text
+        %a{:href => "#planos"}
+          %button.btnSaibaMais{:type => "button"}
+  / Plano 3
+/ row
+
+%section#artigos
+  .conteudo
+  / conteudo
+  %h2.h2 Artigos
+/ Artigos
+%section.row
+  %article.col-4
+    .card
+      .card-body
+        %img.imagem-card{:alt => "", :src => ""}/
+        %h5.card-title
+        %p Publicado em:
+        %hr/
+        %h6.card-text
+        %a.linkInfo{:href => "blog"}
+  / Artigo 1
+  %article.col-4
+    .card
+      .card-body
+        %img.imagem-card{:alt => "", :src => ""}/
+        %h5.card-title
+        %p Publicado em:
+        %hr/
+        %h6.card-text
+        %a.linkInfo{:href => "blog"}
+  / Artigo 2
+  %article.col-4
+    .card
+      .card-body
+        %img.imagem-card{:alt => "", :src => ""}/
+        %h5.card-title
+        %p Publicado em:
+        %hr/
+        %h6.card-text
+        %a.linkInfo{:href => "blog"}
+  / Artigo 3
+/ row
