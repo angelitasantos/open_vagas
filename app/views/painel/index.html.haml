@@ -1,0 +1,6 @@
+- unless user_signed_in? 
+    = render 'painel/acesso'
+
+- if user_signed_in? 
+    %h1 Painel#index
+    %p Find me in app/views/painel/index.html.haml

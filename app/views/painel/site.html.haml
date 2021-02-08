@@ -1,0 +1,6 @@
+- unless user_signed_in? 
+    = render 'painel/acesso'
+
+- if user_signed_in?
+    %h2 Site
+    %div.conteudo

@@ -1,7 +1,7 @@
 %header#navegacao.fixed-top.navbar-dark.bg-dark
   %section.navegacao-center
     %h2.logo.left
-      %a{:href => root_path} ERP Gestão
+      %a{:href => painel_path} ERP Gestão
     / nome
     %nav.desktop.right
       %ul
@@ -24,8 +24,8 @@
             %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Configurações
             .dropdown-menu{"aria-labelledby" => "dropdown01"}
               = link_to('Minha Empresa', dynamic_url_company, class: 'dropdown-item')
-              = link_to('Administração do Painel', painel_path, class: 'dropdown-item')
-              = link_to('Configurações do Site', site_path, class: 'dropdown-item')
+              = link_to('Administração do Painel', painelconfig_path, class: 'dropdown-item')
+              = link_to('Configurações do Site', siteconfig_path, class: 'dropdown-item')
               %hr
               = link_to('Sair', destroy_user_session_path, method: :delete, class: 'dropdown-item')
     / desktop
@@ -50,8 +50,8 @@
             %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Configurações
             .nav-dropdown-menu{"aria-labelledby" => "dropdown01"}
               = link_to('Minha Empresa', dynamic_url_company, class: 'nav-dropdown-item')
-              = link_to('Administração do Painel', painel_path, class: 'nav-dropdown-item')
-              = link_to('Configurações do Site', site_path, class: 'nav-dropdown-item')
+              = link_to('Administração do Painel', painelconfig_path, class: 'nav-dropdown-item')
+              = link_to('Configurações do Site', siteconfig_path, class: 'nav-dropdown-item')
               %hr
               = link_to('Sair', destroy_user_session_path, method: :delete, class: 'nav-dropdown-item')
     / mobile

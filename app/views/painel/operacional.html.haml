@@ -1,0 +1,59 @@
+- unless user_signed_in? 
+  = render 'painel/acesso'
+
+- if user_signed_in?
+  %h2 Painel Operacional
+  %br
+  %section.row
+    %article.col-md-4
+      .card.text-center
+        .card-body
+          %h4.card-title Compras
+          %h5.card-text Dia: R$ 1.500,00
+          %h5.card-text Mês: R$ 6.350,00
+          %a{:href => painel_path}
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar Compras
+          %hr/
+          %h4.card-title Pedidos em aberto
+          %h5.card-text Qtde: 900 unidades
+          %h5.card-text Valor Total: R$ 3.287,00
+          %p
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar Pedidos
+    / Artigo 1
+    %article.col-md-4
+      .card.text-center
+        .card-body
+          %h4.card-title Estoque para Vendas
+          %h5.card-text Qtde: 4.500 unidades
+          %h5.card-text Valor Total: R$ 6.350,00
+          %a{:href => painel_path}
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar Saldo
+          %hr/
+          %h4.card-title Estoque de Apoio
+          %h5.card-text Qtde: 900 unidades
+          %h5.card-text Valor Total: R$ 3.287,00
+          %p
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar Estoque
+    / Artigo 2
+    %article.col-md-4
+      .card.text-center
+        .card-body
+          %h4.card-title Produzido
+          %h5.card-text Qtde: 10.080 unidades
+          %h5.card-text Valor Total: R$ 3.287,00
+          %a{:href => painel_path}
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar Produção
+          %hr/
+          %h4.card-title A Produzir
+          %h5.card-text Qtde: 30.250 unidades
+          %h5.card-text Valor Total: R$ 6.350,00
+          %p
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar Planejamento
+    / Artigo 3
+  / row

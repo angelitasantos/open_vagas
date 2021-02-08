@@ -1,0 +1,57 @@
+- unless user_signed_in? 
+  = render 'painel/acesso'
+
+- if user_signed_in?
+  %h2 Painel Financeiro
+  %br
+  %section.row
+    %article.col-md-4
+      .card.text-center
+        .card-body
+          %h4.card-title Saldo Caixa
+          %h5.card-text R$ 1.500,00
+          %a{:href => painel_path}
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar movimentos
+          %hr/
+          %h4.card-title Saldo Bancos
+          %h5.card-text R$ 800,00
+          %p
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar controles
+    / Artigo 1
+    %article.col-md-4
+      .card.text-center
+        .card-body
+          %h4.card-title Contas a Receber
+          %h5.card-text Dia: R$ 1.500,00
+          %h5.card-text Mês: R$ 6.350,00
+          %a{:href => painel_path}
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar contas
+          %hr/
+          %h4.card-title Contas Recebidas
+          %h5.card-text Dia: R$ 900,00
+          %h5.card-text Mês: R$ 3.287,00
+          %p
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar contas
+    / Artigo 2
+    %article.col-md-4
+      .card.text-center
+        .card-body
+          %h4.card-title Contas a Pagar
+          %h5.card-text Dia: R$ 900,00
+          %h5.card-text Mês: R$ 3.287,00
+          %a{:href => painel_path}
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar contas
+          %hr/
+          %h4.card-title Contas Pagas
+          %h5.card-text Dia: R$ 1.500,00
+          %h5.card-text Mês: R$ 6.350,00
+          %p
+          %a{:href => financeiro_path} 
+            %button.btn.btn-success{:type => "button"}Consultar contas
+    / Artigo 3
+  / row
