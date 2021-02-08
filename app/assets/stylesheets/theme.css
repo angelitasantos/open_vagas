@@ -41,7 +41,13 @@ body {
   float: right;
 }
 
+.conteudo{
+  min-height: 600px;
+}
 
+.card{
+  border: 0px !important;
+}
 
 /* ----------------------------------------------------------------- */
 /* --------------------- Barra de Navegação ------------------------ */
@@ -112,54 +118,57 @@ nav a:hover {
 @media screen and (max-width: 768px){
 
   .logo {
-      padding-top: 5px;
-      font-size: 1.8rem;
+    padding-top: 5px;
+    font-size: 1.8rem;
   }
 
   nav.desktop {
-      display: none;
+    display: none;
   }
 
   nav.mobile {
-      display: block;
+    display: block;
   }
 
   .botao-menu-mobile {
-      font-size: 2rem;
-      color: #FFFFFF;
-      cursor: pointer;
-      padding: 1  0px 0;
+    font-size: 2rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 1  0px 0;
   }
       
   nav.mobile ul {
-      z-index: 3;
-      position: absolute;
-      display: none;
-      left: 0;
-      top: 65px;
-      width: 100%;
-      text-align: center;
+    z-index: 3;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 65px;
+    width: 100%;
+    text-align: center;
   }
 
   nav.mobile li {
-      width: 100%;
-      display: block;
-      background: #343a40;
-      border-bottom: 1px solid #C0C0C0;
-      font-size: 1.2rem;
-      font-weight: 300;
-      padding: 5px 0;
+    width: 100%;
+    display: block;
+    background: #343a40;
+    border-bottom: 1px solid #C0C0C0;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 2px 0;
   }
 
   nav.mobile li a {
-      display: block;
-      color: #FFFFFF;
-      text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    padding:2px 0;
   }
 
   nav.mobile li a:hover {
-      color: #C0C0C0;
-      text-decoration: none;
+    background: #C0C0C0;
+    color: black;
+    text-decoration: none;
   }
 
 }

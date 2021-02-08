@@ -1,0 +1,61 @@
+%header#navegacao.fixed-top.navbar-dark.bg-dark
+  %section.navegacao-center
+    %h2.logo.left
+      %a{:href => root_path} ERP Gestão
+    / nome
+    %nav.desktop.right
+      %ul
+        %li
+          %a{:href => root_path} Home
+        - unless user_signed_in?
+          %li
+            = link_to 'Entrar/Registrar', new_user_session_path
+        - if user_signed_in?
+          %li.dropdown
+            %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Painel Gestão
+            .dropdown-menu{"aria-labelledby" => "dropdown01"}
+              = link_to('Simulador', simulador_path, class: 'dropdown-item')
+              = link_to('Financeiro', financeiro_path, class: 'dropdown-item')
+              = link_to('Vendas', vendas_path, class: 'dropdown-item')
+              = link_to('Cadastros', cadastros_path, class: 'dropdown-item')
+              = link_to('Operacional', operacional_path, class: 'dropdown-item')
+              = link_to('Relatórios', relatorios_path, class: 'dropdown-item')
+          %li.dropdown
+            %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Configurações
+            .dropdown-menu{"aria-labelledby" => "dropdown01"}
+              = link_to('Minha Empresa', dynamic_url_company, class: 'dropdown-item')
+              = link_to('Administração do Painel', painel_path, class: 'dropdown-item')
+              = link_to('Configurações do Site', site_path, class: 'dropdown-item')
+              %hr
+              = link_to('Sair', destroy_user_session_path, method: :delete, class: 'dropdown-item')
+    / desktop
+    %nav.mobile.right
+      .botao-menu-mobile
+        %i.fa.fa-bars{"aria-hidden" => "true"}
+      %ul
+        - unless user_signed_in?
+          %li
+            = link_to 'Entrar/Registrar', new_user_session_path
+        - if user_signed_in?
+          %li.dropdown
+            %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Painel Gestão
+            .nav-dropdown-menu{"aria-labelledby" => "dropdown01"}
+              = link_to('Simulador', simulador_path, class: 'nav-dropdown-item')
+              = link_to('Financeiro', financeiro_path, class: 'nav-dropdown-item')
+              = link_to('Vendas', vendas_path, class: 'nav-dropdown-item')
+              = link_to('Cadastros', cadastros_path, class: 'nav-dropdown-item')
+              = link_to('Operacional', operacional_path, class: 'nav-dropdown-item')
+              = link_to('Relatórios', relatorios_path, class: 'nav-dropdown-item')     
+          %li.dropdown
+            %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Configurações
+            .nav-dropdown-menu{"aria-labelledby" => "dropdown01"}
+              = link_to('Minha Empresa', dynamic_url_company, class: 'nav-dropdown-item')
+              = link_to('Administração do Painel', painel_path, class: 'nav-dropdown-item')
+              = link_to('Configurações do Site', site_path, class: 'nav-dropdown-item')
+              %hr
+              = link_to('Sair', destroy_user_session_path, method: :delete, class: 'nav-dropdown-item')
+    / mobile
+    .clear
+    / clear
+  / center
+/ navegação
