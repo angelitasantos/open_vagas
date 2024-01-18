@@ -1,0 +1,187 @@
+:root {
+    --verde: #008000;
+    --verdeescuro: #2F4F4F;
+    --verdeclaro: #2E8B57;
+    --preto: #000000;
+    --cinzaescuro: #4F4F4F;
+    --cinzaclaro: #A9A9A9;
+    --cinza: #C0C0C0;
+    --branco: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', Times, serif;
+}
+
+
+
+/* ------------------------------------- */
+/* ------------- Navegação ------------- */
+/* ------------------------------------- */
+
+header {
+    background: linear-gradient(rgba(11, 88, 76, 0.8), rgba(0,0,0,0.8)100%), var(--verdeescuro);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--cinza);
+    font-family: 'Arial Black', Times;
+    font-size: 2.5rem;
+}
+
+header h2 a {
+    color: var(--cinza);
+}
+
+header h2 a:hover {
+    color: var(--cinzaclaro);
+    text-decoration: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 1rem;
+}
+
+header nav a:hover{
+    color: var(--verdeescuro);
+    text-decoration: none;
+}
+
+#botaoBlog {
+    margin-top: 60px ;
+}
+
+#blogEstrutura {
+    margin-top: 60px ;
+}
+
+#blogProcessos {
+    margin-top: 60px ;
+}
+
+#blogFinanceiro {
+    margin-top: 60px ;
+}
+
+#botaoDownloads {
+    margin-top: 60px ;
+}
+
+#botaoAgenda {
+    margin-top: 60px ;
+}
+
+.textoRodape {
+    color: var(--branco);
+}
+
+.textoRodape a{
+    color: var(--branco);
+}
+
+.textoRodape a:hover{
+    color: var(--verdeescuro);
+    text-decoration: none;
+}
+
+
+
+/* ------------------------------------- */
+/* ----------- Apresentação ------------ */
+/* ------------------------------------- */
+
+.carousel {
+    margin-bottom: 40px;
+}
+  
+.carousel-inner{
+    background: linear-gradient(rgba(11, 88, 76, 0.9), rgba(0,0,0,0.7)100%), var(--verdeescuro);
+    max-height: 90%;
+}
+  
+.carousel-caption {
+    bottom: 30px;
+    z-index: 10;
+}
+  
+.carousel-item {
+    height: 400px;
+}
+
+
+
+/* ------------------------------------- */
+/* --------------- Botões -------------- */
+/* ------------------------------------- */
+  
+.btn-success{
+    width: 160px;
+    background: linear-gradient(rgba(11, 88, 76, 0.8), rgba(0,0,0,0.8)100%), var(--verdeescuro);
+}
+
+.btn-success:hover{
+    color: var(--branco);
+}
+
+.btn-success.btn-lg {
+    margin: 10px;
+}
+
+.nav-link.btn.btn-success.btn-lg{
+    background-color: var(--branco);
+}
+
+.nav-link.btn.btn-success.btn-lg:hover{
+    background-color: var(--preto);
+}
+
+
+
+/* ------------------------------------- */
+/* -------------- Rodapé ----==--------- */
+/* ------------------------------------- */
+
+.rodape div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociais a{
+    text-decoration: none;
+}
+
+.redes-sociais i {
+    color: var(--cinza);
+}
+
+.redes-sociais i:hover {
+    color: var(--preto);
+}
+
+.redes-sociais div {
+    padding: 5%;
+}
+
+footer {
+    background: linear-gradient(rgba(11, 88, 76, 0.8), rgba(0,0,0,0.8)100%), var(--verdeescuro);
+}
+
+.modal {
+    background: linear-gradient(rgba(11, 88, 76, 0.8), rgba(0,0,0,0.8)100%), var(--verdeescuro);
+}
